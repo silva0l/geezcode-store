@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DN Gamer Store - e-commerce gamer de eletrônicos com periféricos, hardware, acessórios e setup premium." />
+  <meta name="author" content="Jose Frederico da Costa Silva" />
+  <title>DN Gamer Store | Eletrônicos Gamer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+  <!-- Cabeçalho e menu -->
+  <header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Menu principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html" aria-label="Página inicial DN Gamer Store">
+          <span class="brand-icon">DN</span>
+          <span>Gamer Store</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+            <li class="nav-item"><a class="nav-link" href="#novidades">Novidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            <li class="nav-item ms-lg-3">
+              <a class="btn btn-outline-light btn-sm rounded-pill px-3" href="login.html"><i class="bi bi-person-circle me-1"></i> Login</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button class="btn btn-neon btn-sm rounded-pill px-3" id="btnTema" type="button" aria-label="Alternar tema"><i class="bi bi-moon-stars"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal">
+    <!-- Banner / Hero -->
+    <section id="inicio" class="hero-section min-vh-100 d-flex align-items-center">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <span class="badge text-bg-primary rounded-pill mb-3">Setup gamer profissional</span>
+            <h1 class="display-4 fw-bold hero-title">Eletrônicos gamer para elevar o seu desempenho.</h1>
+            <p class="lead hero-text mt-3">Monte seu setup com periféricos, hardware, acessórios e iluminação RGB selecionados para jogadores que buscam velocidade, conforto e estilo.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="#destaques" class="btn btn-neon btn-lg rounded-pill px-4">Ver produtos</a>
+              <a href="#galeria" class="btn btn-outline-light btn-lg rounded-pill px-4">Conhecer setups</a>
+            </div>
+            <div class="row text-center mt-5 hero-stats">
+              <div class="col-4">
+                <strong>+120</strong>
+                <span>Produtos</span>
+              </div>
+              <div class="col-4">
+                <strong>24h</strong>
+                <span>Suporte</span>
+              </div>
+              <div class="col-4">
+                <strong>4.9</strong>
+                <span>Avaliação</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal delay-1">
+            <div id="carouselBanner" class="carousel slide hero-carousel shadow-lg" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner rounded-4 overflow-hidden">
+                <div class="carousel-item active">
+                  <img src="assets/img/banner-setup.svg" class="d-block w-100" alt="Setup gamer com monitor, teclado e iluminação neon">
+                  <div class="carousel-caption text-start">
+                    <h2>Semana RGB</h2>
+                    <p>Periféricos com até 30% OFF.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/banner-hardware.svg" class="d-block w-100" alt="Hardware gamer com placa de vídeo e processador">
+                  <div class="carousel-caption text-start">
+                    <h2>Upgrade de performance</h2>
+                    <p>Hardware para jogos competitivos.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/banner-acessorios.svg" class="d-block w-100" alt="Acessórios gamer premium com headset e mousepad">
+                  <div class="carousel-caption text-start">
+                    <h2>Conforto no setup</h2>
+                    <p>Cadeiras, headsets e acessórios.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev" aria-label="Slide anterior">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next" aria-label="Próximo slide">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="benefits-section py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4 reveal">
+            <article class="benefit-card h-100">
+              <i class="bi bi-truck"></i>
+              <h3>Entrega rápida</h3>
+              <p>Envio seguro para todo o Brasil com acompanhamento do pedido.</p>
+            </article>
+          </div>
+          <div class="col-md-4 reveal delay-1">
+            <article class="benefit-card h-100">
+              <i class="bi bi-shield-check"></i>
+              <h3>Compra protegida</h3>
+              <p>Produtos com garantia, nota fiscal e atendimento especializado.</p>
+            </article>
+          </div>
+          <div class="col-md-4 reveal delay-2">
+            <article class="benefit-card h-100">
+              <i class="bi bi-headset"></i>
+              <h3>Suporte gamer</h3>
+              <p>Ajuda para escolher peças compatíveis com o seu setup.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destaques -->
+    <section id="destaques" class="py-5 section-dark">
+      <div class="container">
+        <div class="section-heading text-center reveal">
+          <span class="section-kicker">Produtos em destaque</span>
+          <h2>Mais vendidos da loja</h2>
+          <p>Produtos selecionados com foco em performance, durabilidade e design gamer.</p>
+        </div>
+
+        <div class="row justify-content-center mt-4 mb-4 reveal">
+          <div class="col-lg-7">
+            <div class="input-group search-box">
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="search" id="campoBusca" class="form-control" placeholder="Buscar produto: teclado, headset, mouse..." aria-label="Buscar produto">
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4" id="listaProdutos">
+          <div class="col-md-6 col-lg-3 produto" data-nome="teclado mecânico rgb">
+            <article class="product-card h-100">
+              <span class="tag-sale">-25%</span>
+              <img src="assets/img/produto-teclado.svg" alt="Teclado mecânico gamer RGB">
+              <div class="product-body">
+                <h3>Teclado Mecânico RGB</h3>
+                <p>Switch blue, anti-ghosting e iluminação personalizável.</p>
+                <div class="rating" aria-label="Avaliação 5 de 5">★★★★★</div>
+                <div class="price">R$ 249,90</div>
+                <button class="btn btn-neon w-100 btnComprar" data-produto="Teclado Mecânico RGB">Adicionar ao carrinho</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3 produto" data-nome="mouse gamer dpi">
+            <article class="product-card h-100">
+              <span class="tag-sale">Novo</span>
+              <img src="assets/img/produto-mouse.svg" alt="Mouse gamer com alta precisão">
+              <div class="product-body">
+                <h3>Mouse Gamer 12.000 DPI</h3>
+                <p>Sensor óptico, 7 botões e pegada confortável.</p>
+                <div class="rating" aria-label="Avaliação 4 de 5">★★★★☆</div>
+                <div class="price">R$ 159,90</div>
+                <button class="btn btn-neon w-100 btnComprar" data-produto="Mouse Gamer 12.000 DPI">Adicionar ao carrinho</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3 produto" data-nome="headset gamer surround">
+            <article class="product-card h-100">
+              <span class="tag-sale">Top</span>
+              <img src="assets/img/produto-headset.svg" alt="Headset gamer surround">
+              <div class="product-body">
+                <h3>Headset Surround 7.1</h3>
+                <p>Som imersivo, microfone removível e espuma premium.</p>
+                <div class="rating" aria-label="Avaliação 5 de 5">★★★★★</div>
+                <div class="price">R$ 319,90</div>
+                <button class="btn btn-neon w-100 btnComprar" data-produto="Headset Surround 7.1">Adicionar ao carrinho</button>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-3 produto" data-nome="monitor gamer 165hz">
+            <article class="product-card h-100">
+              <span class="tag-sale">-15%</span>
+              <img src="assets/img/produto-monitor.svg" alt="Monitor gamer de alta taxa de atualização">
+              <div class="product-body">
+                <h3>Monitor Gamer 165Hz</h3>
+                <p>Tela Full HD, baixa latência e imagem fluida.</p>
+                <div class="rating" aria-label="Avaliação 5 de 5">★★★★★</div>
+                <div class="price">R$ 1.199,90</div>
+                <button class="btn btn-neon w-100 btnComprar" data-produto="Monitor Gamer 165Hz">Adicionar ao carrinho</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="text-center mt-4 carrinho-status reveal">
+          <i class="bi bi-cart-check"></i>
+          <span id="contadorCarrinho">0</span> item(ns) no carrinho
+        </div>
+      </div>
+    </section>
+
+    <!-- Novidades -->
+    <section id="novidades" class="py-5 novidades-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal">
+            <span class="section-kicker">Novidades</span>
+            <h2>Chegou a linha Pro Series</h2>
+            <p>Uma seleção de acessórios gamer com acabamento premium, iluminação inteligente e alta compatibilidade com notebooks, consoles e desktops.</p>
+            <ul class="feature-list">
+              <li><i class="bi bi-check-circle-fill"></i> Setup com RGB sincronizado</li>
+              <li><i class="bi bi-check-circle-fill"></i> Componentes com baixa latência</li>
+              <li><i class="bi bi-check-circle-fill"></i> Garantia e suporte especializado</li>
+            </ul>
+            <button class="btn btn-outline-light rounded-pill px-4" id="btnCupom">Gerar cupom especial</button>
+            <p class="cupom mt-3" id="resultadoCupom" aria-live="polite"></p>
+          </div>
+
+          <div class="col-lg-7 reveal delay-1">
+            <div class="table-responsive comparison-card">
+              <table class="table table-dark table-hover align-middle mb-0">
+                <caption class="text-light">Comparativo de kits gamer disponíveis na DN Gamer Store</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Kit</th>
+                    <th scope="col">Indicado para</th>
+                    <th scope="col">Itens</th>
+                    <th scope="col">Preço</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Starter</td>
+                    <td>Jogadores iniciantes</td>
+                    <td>Teclado + Mouse</td>
+                    <td>R$ 349,90</td>
+                  </tr>
+                  <tr>
+                    <td>Competitive</td>
+                    <td>FPS e e-sports</td>
+                    <td>Mouse + Headset + Mousepad</td>
+                    <td>R$ 529,90</td>
+                  </tr>
+                  <tr>
+                    <td>Ultimate</td>
+                    <td>Setup completo</td>
+                    <td>Monitor + Teclado + Mouse + Headset</td>
+                    <td>R$ 1.999,90</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="py-5 section-dark">
+      <div class="container">
+        <div class="section-heading text-center reveal">
+          <span class="section-kicker">Galeria</span>
+          <h2>Inspiração para seu setup</h2>
+          <p>Clique nas imagens para visualizar detalhes dos ambientes gamer.</p>
+        </div>
+
+        <div class="row g-4 mt-3 gallery-grid">
+          <div class="col-sm-6 col-lg-4 reveal">
+            <button class="gallery-item" data-bs-toggle="modal" data-bs-target="#modalGaleria" data-img="assets/img/galeria-1.svg" data-title="Setup competitivo RGB">
+              <img src="assets/img/galeria-1.svg" alt="Setup competitivo com iluminação RGB">
+            </button>
+          </div>
+          <div class="col-sm-6 col-lg-4 reveal delay-1">
+            <button class="gallery-item" data-bs-toggle="modal" data-bs-target="#modalGaleria" data-img="assets/img/galeria-2.svg" data-title="Estação de streaming">
+              <img src="assets/img/galeria-2.svg" alt="Estação gamer para streaming">
+            </button>
+          </div>
+          <div class="col-sm-6 col-lg-4 reveal delay-2">
+            <button class="gallery-item" data-bs-toggle="modal" data-bs-target="#modalGaleria" data-img="assets/img/galeria-3.svg" data-title="Hardware premium">
+              <img src="assets/img/galeria-3.svg" alt="Hardware gamer premium com gabinete iluminado">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato / Newsletter -->
+    <section id="contato" class="py-5 contact-section">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 reveal">
+            <span class="section-kicker">Contato</span>
+            <h2>Receba ofertas e novidades</h2>
+            <p>Cadastre seu e-mail para receber promoções, lançamentos e dicas para melhorar seu setup gamer.</p>
+            <div class="footer-social mt-4">
+              <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal delay-1">
+            <form class="contact-form" id="formNewsletter" novalidate>
+              <div class="mb-3">
+                <label for="nomeNewsletter" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nomeNewsletter" placeholder="Digite seu nome" required>
+              </div>
+              <div class="mb-3">
+                <label for="emailNewsletter" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="emailNewsletter" placeholder="seuemail@exemplo.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="preferencia" class="form-label">Interesse principal</label>
+                <select id="preferencia" class="form-select" required>
+                  <option value="">Selecione uma opção</option>
+                  <option>Periféricos</option>
+                  <option>Hardware</option>
+                  <option>Monitores</option>
+                  <option>Acessórios</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-neon w-100">Cadastrar</button>
+              <p class="form-message mt-3" id="mensagemNewsletter" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; <span id="anoAtual"></span> DN Gamer Store. Projeto acadêmico de Front-End.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#inicio" class="footer-link">Voltar ao topo</a>
+          <span class="mx-2">|</span>
+          <a href="login.html" class="footer-link">Área do cliente</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal da galeria -->
+  <div class="modal fade" id="modalGaleria" tabindex="-1" aria-labelledby="tituloModalGaleria" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-dark">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="tituloModalGaleria">Detalhe do setup</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/galeria-1.svg" alt="Imagem ampliada do setup gamer" id="imagemModal" class="img-fluid rounded-3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de feedback -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toastFeedback" class="toast toast-dark" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">DN Gamer Store</strong>
+        <small>agora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
+      </div>
+      <div class="toast-body" id="toastMensagem">Produto adicionado ao carrinho.</div>
+    </div>
+  </div>
+
+  <button id="btnTopo" class="btn btn-neon btn-topo" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript principal -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

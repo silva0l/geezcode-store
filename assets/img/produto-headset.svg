@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-label="Headset 7.1">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#071022"/><stop offset="50%" stop-color="#071c2e"/><stop offset="100%" stop-color="#7c3cff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="900" height="650" fill="url(#bg)"/>
+  <circle cx="695" cy="145" r="180" fill="#fff" opacity=".08"/>
+  <circle cx="180" cy="530" r="240" fill="#00d9ff" opacity=".11"/>
+  <g stroke="#ffffff" opacity=".18" stroke-width="2">
+    <path d="M80 120h740M80 220h740M80 320h740M80 420h740M80 520h740"/>
+    <path d="M130 70v520M260 70v520M390 70v520M520 70v520M650 70v520M780 70v520"/>
+  </g>
+  <g transform="translate(285 155)" filter="url(#glow)">
+    <rect x="0" y="75" width="330" height="175" rx="34" fill="#090f20" stroke="#00d9ff" stroke-width="8"/>
+    <text x="165" y="185" text-anchor="middle" fill="#29ffb2" font-family="Segoe UI Emoji, Segoe UI, Arial" font-size="120">🎧</text>
+  </g>
+  <text x="60" y="565" fill="#ffffff" font-family="Segoe UI, Arial" font-size="42" font-weight="900">Headset 7.1</text>
+  <text x="60" y="610" fill="#c8d3ea" font-family="Segoe UI, Arial" font-size="24">Áudio imersivo</text>
+</svg>

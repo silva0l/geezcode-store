@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Setup RGB">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06172e"/>
+      <stop offset="55%" stop-color="#0b1024"/>
+      <stop offset="100%" stop-color="#4713a6"/>
+    </linearGradient>
+    <radialGradient id="r" cx="50%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".20"/>
+      <stop offset="65%" stop-color="#00d9ff" stop-opacity=".05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <rect width="1200" height="800" fill="url(#r)"/>
+  <path d="M0 595 C230 480 330 670 545 558 C743 456 850 500 1200 390 L1200 800 L0 800 Z" fill="#050713" opacity=".55"/>
+  <g opacity=".18" stroke="#ffffff" stroke-width="2">
+    <path d="M95 100h1010M95 205h1010M95 310h1010M95 415h1010M95 520h1010M95 625h1010"/>
+    <path d="M155 60v650M325 60v650M495 60v650M665 60v650M835 60v650M1005 60v650"/>
+  </g>
+  <g transform="translate(735 190)" filter="url(#glow)">
+    <rect x="0" y="0" width="310" height="210" rx="24" fill="#111936" stroke="#00d9ff" stroke-width="6"/>
+    <rect x="28" y="28" width="254" height="154" rx="14" fill="#070b18" stroke="#7c3cff" stroke-width="3"/>
+    <path d="M72 228h166l34 74H38z" fill="#0e1730" stroke="#29ffb2" stroke-width="4"/>
+    <circle cx="155" cy="106" r="48" fill="none" stroke="#00d9ff" stroke-width="10"/>
+    <path d="M155 55v102M104 106h102" stroke="#29ffb2" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(90 160)">
+    <text x="0" y="0" fill="#00d9ff" font-family="Segoe UI, Arial" font-size="28" font-weight="800" letter-spacing="4">DN GAMER STORE</text>
+    <text x="0" y="88" fill="#ffffff" font-family="Segoe UI, Arial" font-size="76" font-weight="900">Setup RGB</text>
+    <text x="0" y="142" fill="#c8d3ea" font-family="Segoe UI, Arial" font-size="32" font-weight="500">Performance, conforto e estilo em um só lugar.</text>
+    <text x="0" y="270" fill="#29ffb2" font-family="Segoe UI Emoji, Segoe UI, Arial" font-size="105">🎮</text>
+  </g>
+</svg>

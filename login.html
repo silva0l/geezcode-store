@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Login da DN Gamer Store para clientes gamer acessarem ofertas e pedidos." />
+  <meta name="author" content="Jose Frederico da Costa Silva" />
+  <title>Login | DN Gamer Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="login-page">
+  <a class="skip-link" href="#loginPrincipal">Ir para o conteúdo principal</a>
+
+  <header class="site-header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Menu principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html" aria-label="Página inicial DN Gamer Store">
+          <span class="brand-icon">DN</span>
+          <span>Gamer Store</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#destaques">Destaques</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#novidades">Novidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#galeria">Galeria</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="login.html">Login</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <button class="btn btn-neon btn-sm rounded-pill px-3" id="btnTema" type="button" aria-label="Alternar tema"><i class="bi bi-moon-stars"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="loginPrincipal" class="login-main min-vh-100 d-flex align-items-center">
+    <div class="container py-5">
+      <div class="row align-items-center justify-content-center g-5">
+        <div class="col-lg-6 reveal">
+          <div class="login-presentation">
+            <span class="section-kicker">Área do cliente</span>
+            <h1>Entre para acompanhar seus pedidos e ofertas gamer.</h1>
+            <p>Acesse sua conta para visualizar promoções exclusivas, histórico de compras, favoritos e suporte personalizado para montar seu setup.</p>
+            <div class="login-highlights">
+              <div><i class="bi bi-lightning-charge"></i> Ofertas relâmpago</div>
+              <div><i class="bi bi-controller"></i> Produtos gamer</div>
+              <div><i class="bi bi-lock"></i> Acesso seguro</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 reveal delay-1">
+          <section class="login-card" aria-labelledby="tituloLogin">
+            <div class="text-center mb-4">
+              <span class="brand-icon mx-auto mb-3">DN</span>
+              <h2 id="tituloLogin">Login</h2>
+              <p>Informe seus dados para acessar a loja.</p>
+            </div>
+
+            <form id="formLogin" novalidate>
+              <div class="mb-3">
+                <label for="emailLogin" class="form-label">E-mail</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                  <input type="email" class="form-control" id="emailLogin" placeholder="cliente@email.com" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="senhaLogin" class="form-label">Senha</label>
+                <div class="input-group">
+                  <span class="input-group-text"><i class="bi bi-key"></i></span>
+                  <input type="password" class="form-control" id="senhaLogin" placeholder="Mínimo 6 caracteres" required minlength="6">
+                  <button class="btn btn-outline-light" type="button" id="btnMostrarSenha" aria-label="Mostrar ou ocultar senha"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-3 small">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="lembrarLogin">
+                  <label class="form-check-label" for="lembrarLogin">Lembrar acesso</label>
+                </div>
+                <a href="#" class="login-link">Esqueci minha senha</a>
+              </div>
+
+              <button type="submit" class="btn btn-neon w-100 py-2">Entrar</button>
+              <p class="form-message mt-3 text-center" id="mensagemLogin" aria-live="polite"></p>
+            </form>
+
+            <hr>
+            <p class="text-center small mb-0">Ainda não tem conta? <a href="index.html#contato" class="login-link">Cadastre-se na newsletter</a></p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container text-center">
+      <p class="mb-0">&copy; <span id="anoAtual"></span> DN Gamer Store. Projeto acadêmico de Front-End.</p>
+    </div>
+  </footer>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript principal -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

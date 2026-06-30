@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="760" viewBox="0 0 1000 760" role="img" aria-label="Setup competitivo RGB">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0b1637"/><stop offset="52%" stop-color="#071022"/><stop offset="100%" stop-color="#7c3cff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1000" height="760" fill="url(#bg)"/>
+  <path d="M0 580 C155 480 240 650 400 545 C560 440 720 455 1000 350 L1000 760 L0 760 Z" fill="#020617" opacity=".62"/>
+  <g opacity=".18" stroke="#fff" stroke-width="3">
+    <path d="M70 120h860M70 250h860M70 380h860M70 510h860"/>
+    <path d="M180 70v560M360 70v560M540 70v560M720 70v560"/>
+  </g>
+  <g transform="translate(315 135)" filter="url(#glow)">
+    <rect x="0" y="0" width="370" height="250" rx="32" fill="#0b1024" stroke="#00d9ff" stroke-width="8"/>
+    <rect x="40" y="35" width="290" height="180" rx="20" fill="#020617" stroke="#7c3cff" stroke-width="4"/>
+    <text x="185" y="160" text-anchor="middle" fill="#29ffb2" font-family="Segoe UI Emoji, Segoe UI, Arial" font-size="110">🎮</text>
+    <rect x="110" y="270" width="150" height="36" rx="16" fill="#00d9ff"/>
+  </g>
+  <text x="70" y="650" fill="#ffffff" font-family="Segoe UI, Arial" font-size="48" font-weight="900">Setup competitivo RGB</text>
+  <text x="70" y="700" fill="#c8d3ea" font-family="Segoe UI, Arial" font-size="26">Ambiente gamer premium</text>
+</svg>
