@@ -381,6 +381,11 @@ section {
   color: var(--neon-blue);
 }
 
+.search-empty {
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
 /* Novidades */
 .feature-list {
   padding-left: 0;

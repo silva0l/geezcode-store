@@ -1,6 +1,6 @@
 class Carrinho {
   constructor() {
-    this.itens = JSON.parse(localStorage.getItem("dnCarrinho")) || [];
+    this.itens = JSON.parse(localStorage.getItem("geezCarrinho")) || [];
   }
 
   adicionar(produto) {
@@ -13,12 +13,12 @@ class Carrinho {
   }
 
   salvar() {
-    localStorage.setItem("dnCarrinho", JSON.stringify(this.itens));
+    localStorage.setItem("geezCarrinho", JSON.stringify(this.itens));
   }
 }
 
 const carrinho = new Carrinho();
-const cupons = ["DN10", "GAMER15", "RGB20", "SETUP25"];
+const cupons = ["GEEZ10", "CODE15", "RGB20", "SETUP25"];
 
 function atualizarAno() {
   const ano = new Date().getFullYear();
@@ -45,7 +45,7 @@ function validarEmail(email) {
 }
 
 function aplicarTemaSalvo() {
-  const temaSalvo = localStorage.getItem("dnTema");
+  const temaSalvo = localStorage.getItem("geezTema");
 
   if (temaSalvo === "claro") {
     document.body.classList.add("light-theme");
@@ -58,7 +58,7 @@ function configurarTema() {
     $("body").toggleClass("light-theme");
     const temaClaro = $("body").hasClass("light-theme");
 
-    localStorage.setItem("dnTema", temaClaro ? "claro" : "escuro");
+    localStorage.setItem("geezTema", temaClaro ? "claro" : "escuro");
     $("#btnTema i").toggleClass("bi-moon-stars bi-sun");
   });
 }
@@ -66,12 +66,20 @@ function configurarTema() {
 function configurarBuscaProdutos() {
   $("#campoBusca").on("input", function () {
     const busca = $(this).val().toLowerCase().trim();
+    let encontrados = 0;
 
     $(".produto").each(function () {
       const nomeProduto = $(this).data("nome").toLowerCase();
       const encontrou = nomeProduto.includes(busca);
+
+      if (encontrou) {
+        encontrados += 1;
+      }
+
       $(this).toggle(encontrou);
     });
+
+    $("#mensagemBusca").toggleClass("d-none", encontrados > 0);
   });
 }
 
@@ -117,7 +125,7 @@ function configurarNewsletter() {
     }
 
     const cadastro = { nome, email, preferencia };
-    localStorage.setItem("dnNewsletter", JSON.stringify(cadastro));
+    localStorage.setItem("geezNewsletter", JSON.stringify(cadastro));
 
     mensagem.removeClass("message-error").addClass("message-success").text(`Cadastro realizado com sucesso, ${nome}!`);
     this.reset();
@@ -153,15 +161,15 @@ function configurarLogin() {
     }
 
     if (lembrar) {
-      localStorage.setItem("dnUsuario", email);
+      localStorage.setItem("geezUsuario", email);
     } else {
-      localStorage.removeItem("dnUsuario");
+      localStorage.removeItem("geezUsuario");
     }
 
-    mensagem.removeClass("message-error").addClass("message-success").text("Login validado com sucesso! Bem-vindo à DN Gamer Store.");
+    mensagem.removeClass("message-error").addClass("message-success").text("Login validado com sucesso! Bem-vindo à GeezCode Store.");
   });
 
-  const usuarioSalvo = localStorage.getItem("dnUsuario");
+  const usuarioSalvo = localStorage.getItem("geezUsuario");
   if (usuarioSalvo) {
     $("#emailLogin").val(usuarioSalvo);
     $("#lembrarLogin").prop("checked", true);

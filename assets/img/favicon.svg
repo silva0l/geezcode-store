@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">GeezCode Store</title>
+  <desc id="desc">Icone com as letras GC em fundo gamer neon.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00d9ff"/>
+      <stop offset="1" stop-color="#29ffb2"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c3cff"/>
+      <stop offset="1" stop-color="#00d9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#050713"/>
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#bg)"/>
+  <text x="64" y="78" text-anchor="middle" fill="#050713" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="900">GC</text>
+  <path d="M18 18h92v10H28v82H18V18Z" fill="url(#edge)" opacity=".55"/>
+</svg>

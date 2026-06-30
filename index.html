@@ -3,9 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DN Gamer Store - e-commerce gamer de eletrônicos com periféricos, hardware, acessórios e setup premium." />
+  <meta name="description" content="GeezCode Store - e-commerce gamer de eletrônicos com periféricos, hardware, acessórios e setup premium." />
+  <meta name="keywords" content="e-commerce gamer, eletrônicos gamer, periféricos, hardware, setup gamer, Bootstrap, Front-End" />
   <meta name="author" content="Jose Frederico da Costa Silva" />
-  <title>DN Gamer Store | Eletrônicos Gamer</title>
+  <meta name="theme-color" content="#050713" />
+  <meta property="og:title" content="GeezCode Store | Eletrônicos Gamer" />
+  <meta property="og:description" content="Projeto Front-End de e-commerce gamer com home, login, carousel, galeria, formulários e interatividade." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://silva0l.github.io/geezcode-store/" />
+  <title>GeezCode Store | Eletrônicos Gamer</title>
+  <link rel="canonical" href="https://silva0l.github.io/geezcode-store/" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,9 +31,9 @@
   <header class="site-header fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Menu principal">
       <div class="container">
-        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html" aria-label="Página inicial DN Gamer Store">
-          <span class="brand-icon">DN</span>
-          <span>Gamer Store</span>
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html" aria-label="Página inicial GeezCode Store">
+          <span class="brand-icon">GC</span>
+          <span>GeezCode Store</span>
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
@@ -227,6 +235,8 @@
           </div>
         </div>
 
+        <p class="text-center search-empty mt-4 d-none" id="mensagemBusca" aria-live="polite">Nenhum produto encontrado com esse termo.</p>
+
         <div class="text-center mt-4 carrinho-status reveal">
           <i class="bi bi-cart-check"></i>
           <span id="contadorCarrinho">0</span> item(ns) no carrinho
@@ -254,7 +264,7 @@
           <div class="col-lg-7 reveal delay-1">
             <div class="table-responsive comparison-card">
               <table class="table table-dark table-hover align-middle mb-0">
-                <caption class="text-light">Comparativo de kits gamer disponíveis na DN Gamer Store</caption>
+                <caption class="text-light">Comparativo de kits gamer disponíveis na GeezCode Store</caption>
                 <thead>
                   <tr>
                     <th scope="col">Kit</th>
@@ -367,7 +377,7 @@
     <div class="container">
       <div class="row align-items-center g-3">
         <div class="col-md-6">
-          <p class="mb-0">&copy; <span id="anoAtual"></span> DN Gamer Store. Projeto acadêmico de Front-End.</p>
+          <p class="mb-0">&copy; <span id="anoAtual"></span> GeezCode Store. Projeto acadêmico de Front-End.</p>
         </div>
         <div class="col-md-6 text-md-end">
           <a href="#inicio" class="footer-link">Voltar ao topo</a>
@@ -397,7 +407,7 @@
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="toastFeedback" class="toast toast-dark" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <strong class="me-auto">DN Gamer Store</strong>
+        <strong class="me-auto">GeezCode Store</strong>
         <small>agora</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar"></button>
       </div>
